@@ -49,21 +49,21 @@ public class HelloWorld extends ActionSupport  implements RequestAware
     	try {
     		Class.forName(DBDriver).newInstance();
     	} catch (Exception e) {
-    		System.out.print("Á¬½Ó´íÎó1£¡");
+    		System.out.print("B3ï¼");
     		e.printStackTrace();
     	} try{
     		conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_mybook1","o3z305zz0j" ,"w1jl03w3jikh1ki4mijjm3i4ky4j25h0zhijjm01");
     	}catch (Exception e) {
-    		System.out.print("Á¬½Ó´íÎó2£¡");
+    		System.out.print("è¿æ¥é”™è¯¯2ï¼");
     		e.printStackTrace();
     	} try{
     		st = conn.createStatement();
     		st2 = conn.createStatement();
     	}catch (Exception e) {
-    		System.out.print("Á¬½Ó´íÎó3£¡");
+    		System.out.print("è¿æ¥é”™è¯¯3ï¼");
     		e.printStackTrace();
     	} try{
-    		System.out.println("²âÊÔÁ¬½Ó1£¡"+Author);
+    		System.out.println("æµ‹è¯•è¿æ¥1ï¼"+Author);
     		if (Author.isEmpty()) {
     			System.out.println("empty");
     			res1 = st.executeQuery("select * from author");
@@ -71,7 +71,7 @@ public class HelloWorld extends ActionSupport  implements RequestAware
     		else 
     			res1 = st.executeQuery("select * from author where name ='" + Author +"'");
     	}catch (Exception e) {
-    		System.out.print("Á¬½Ó´íÎó4£¡");
+    		System.out.print("è¿æ¥é”™è¯¯4ï¼");
     		e.printStackTrace();
     	} try{
     		int cnt=0;
@@ -100,7 +100,7 @@ public class HelloWorld extends ActionSupport  implements RequestAware
     		map.put("ls", ls);
     		
     	} catch (Exception e) {
-    		System.out.print("Á¬½Ó´íÎó5£¡");
+    		System.out.print("è¿æ¥é”™è¯¯5ï¼");
     		e.printStackTrace();
     	}
     	System.out.println("ls:"+ls.size());
