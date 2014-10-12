@@ -12,6 +12,7 @@ public class begin extends ActionSupport{
     }
 	public void change()
 	{
+		int B1;
 	}
 	}
 
