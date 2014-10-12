@@ -6,6 +6,6 @@ public class data{
 	public int PublishDate, AuthorAge;
 	public void change()
 	{
-		int change1=0;
+		int B1data;
 	}
 }
