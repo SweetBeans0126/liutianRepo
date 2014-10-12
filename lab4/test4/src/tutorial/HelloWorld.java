@@ -49,7 +49,7 @@ public class HelloWorld extends ActionSupport  implements RequestAware
     	try {
     		Class.forName(DBDriver).newInstance();
     	} catch (Exception e) {
-    		System.out.print("B3！");
+    		System.out.print("change fromB3！");
     		e.printStackTrace();
     	} try{
     		conn = DriverManager.getConnection("jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_mybook1","o3z305zz0j" ,"w1jl03w3jikh1ki4mijjm3i4ky4j25h0zhijjm01");
